@@ -8,7 +8,7 @@ function Navbar() {
       <header className="w-full h-auto border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="mx-auto px-4 py-4">
           <div className="flex items-center justify-between relative">
-            <a href="/" className="flex items-center space-x-2">
+            <a href="/" className="flex items-center justify-center space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -16,6 +16,7 @@ function Navbar() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
+                color="blue"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -26,7 +27,7 @@ function Navbar() {
                 <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3" />
               </svg>
               <span className="text-2xl font-bold text-gray-900">
-                BookForYou
+                Book<span className="text-blue-500">For</span>You
               </span>
             </a>
 
