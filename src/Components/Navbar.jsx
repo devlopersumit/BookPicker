@@ -26,7 +26,7 @@ function Navbar() {
                 <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3" />
               </svg>
               <span className="text-2xl font-bold text-gray-900">
-                FindYourBook
+                BookForYou
               </span>
             </a>
 
