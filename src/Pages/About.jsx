@@ -44,6 +44,7 @@ function About() {
           </li>
         </ul>
       </div>
+      <div className="flex items-center justify-center">
       <p className="text-gray-600 mt-8 text-xs sm:text-sm text-left sm:text-center md:text-center">
         Made with ❤️ by Sumit Jha.
         <br className="sm:hidden" /> Connect on{" "}
@@ -66,6 +67,7 @@ function About() {
         </a>
         .
       </p>
+      </div>
     </div>
   );
 }
