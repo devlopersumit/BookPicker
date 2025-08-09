@@ -2,6 +2,7 @@ import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import WhyBookForYou from "../Components/WhyBookForYou";
 import Category from "../Components/Category";
+import NotSure from "../Components/NotSure";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <Hero />
         <WhyBookForYou />
         <Category />
+        <NotSure />
       </div>
     </>
   );
