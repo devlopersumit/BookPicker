@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ function Navbar() {
       <header className="w-full h-auto border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="mx-auto px-4 py-4">
           <div className="flex items-center justify-between relative">
-            <a href="/" className="flex items-center justify-center space-x-2">
+            <Link to="/" className="flex items-center justify-center space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -29,25 +30,25 @@ function Navbar() {
               <span className="text-2xl font-bold text-gray-900">
                 Book<span className="text-blue-500">For</span>You
               </span>
-            </a>
+            </Link>
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex space-x-6">
-              <a href="/" className="text-blue-600 font-medium">
+              <NavLink to="/" className="text-blue-600 font-medium">
                 Home
-              </a>
-              <a
-                href="/categories"
+              </NavLink>
+              <NavLink
+                to="/categories"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
                 Categories
-              </a>
-              <a
-                href="/search"
+              </NavLink>
+              <NavLink
+                to="/search"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
                 Search
-              </a>
+              </NavLink>
             </nav>
 
             {/* Mobile Nav Button */}
