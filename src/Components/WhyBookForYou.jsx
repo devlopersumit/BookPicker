@@ -59,25 +59,36 @@ function WhyBookForYou() {
                   personal growth journey.
                 </p>
                 <div class="bg-green-50 rounded-xl p-6 mb-6">
-                  <h3 class="text-xl font-semibold text-green-900 mb-3">
-                    My Promise to You:
+                  <h3 className="text-xl font-semibold text-green-900 mb-3">
+                    What Makes BookForYou Different:
                   </h3>
-                  <ul class="space-y-2 text-green-800">
-                    <li class="flex items-center space-x-2">
-                      <span class="text-green-600">✓</span>
-                      <span>No ads, no tracking, no monetization</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                      <span class="text-green-600">✓</span>
+                  <ul className="space-y-2 text-green-800">
+                    <li className="flex items-center space-x-2">
+                      <span className="text-green-600">✓</span>
                       <span>
-                        Just honest book recommendations and summaries
+                        Curated selections focused on personal growth, not
+                        popularity
                       </span>
                     </li>
-                    <li class="flex items-center space-x-2">
-                      <span class="text-green-600">✓</span>
+                    <li className="flex items-center space-x-2">
+                      <span className="text-green-600">✓</span>
                       <span>
-                        Built by someone who faces the same reading challenges
-                        you do
+                        Clear, concise summaries so you know what you'll gain
+                        before you read
+                      </span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <span className="text-green-600">✓</span>
+                      <span>
+                        No signups, no distractions—just a simple, honest book
+                        discovery experience
+                      </span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <span className="text-green-600">✓</span>
+                      <span>
+                        Built by a reader, for readers who value their time and
+                        growth
                       </span>
                     </li>
                   </ul>
