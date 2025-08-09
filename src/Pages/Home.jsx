@@ -13,7 +13,6 @@ const Home = () => {
         <WhyBookForYou />
         <Category />
         <NotSure />
-        <Footer />
       </div>
     </>
   );
