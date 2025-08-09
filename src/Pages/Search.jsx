@@ -9,7 +9,8 @@ const books = [
     description:
       "Tiny changes, remarkable results. Learn how to build good habits and break bad ones.",
     category: "Productivity",
-    image: "https://thefioneers.com/wp-content/uploads/2021/05/AtomicHabits_1book-792x1024.png",
+    image:
+      "https://thefioneers.com/wp-content/uploads/2021/05/AtomicHabits_1book-792x1024.png",
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ const books = [
     author: "Morgan Housel",
     description: "Timeless lessons on wealth, greed, and happiness.",
     category: "Finance",
-    image: "https://penerbitbaca.com/wp-content/uploads/2023/10/The-Psychology-of-Money.jpg",
+    image:
+      "https://penerbitbaca.com/wp-content/uploads/2023/10/The-Psychology-of-Money.jpg",
   },
   {
     id: 3,
@@ -26,7 +28,8 @@ const books = [
     description:
       "The new psychology of success and how we can learn to fulfill our potential.",
     category: "Personal Growth",
-    image: "https://blog.cdn.level.game/2023/06/Mindset-Carol-S.Dweck-Buy-Online-Bookbins-1.png",
+    image:
+      "https://blog.cdn.level.game/2023/06/Mindset-Carol-S.Dweck-Buy-Online-Bookbins-1.png",
   },
   {
     id: 4,
@@ -34,7 +37,148 @@ const books = [
     author: "Cal Newport",
     description: "Rules for focused success in a distracted world.",
     category: "Productivity",
-    image: "https://5.imimg.com/data5/SELLER/Default/2022/2/JN/OT/TH/147304712/whatsapp-image-2022-02-11-at-3-26-48-pm-500x500.jpeg",
+    image:
+      "https://5.imimg.com/data5/SELLER/Default/2022/2/JN/OT/TH/147304712/whatsapp-image-2022-02-11-at-3-26-48-pm-500x500.jpeg",
+  },
+  {
+    id: 5,
+    title: "The 7 Habits of Highly Effective People",
+    author: "Stephen R. Covey",
+    description: "Powerful lessons in personal change and effectiveness.",
+    category: "Personal Growth",
+    image:
+      "https://cdn.kobo.com/book-images/8cacc164-4797-47d4-a845-9fe06fbe44fd/1200/1200/False/the-7-habits-of-highly-effective-people-infographics-edition.jpg",
+  },
+  {
+    id: 6,
+    title: "Rich Dad Poor Dad",
+    author: "Robert Kiyosaki",
+    description:
+      "What the rich teach their kids about money that the poor and middle class do not.",
+    category: "Finance",
+    image: "https://m.media-amazon.com/images/I/81BE7eeKzAL.jpg",
+  },
+  {
+    id: 7,
+    title: "The Power of Now",
+    author: "Eckhart Tolle",
+    description:
+      "A guide to spiritual enlightenment and living in the present moment.",
+    category: "Personal Growth",
+    image: "https://m.media-amazon.com/images/I/71sBtM3Yi5L.jpg",
+  },
+  {
+    id: 8,
+    title: "Thinking, Fast and Slow",
+    author: "Daniel Kahneman",
+    description:
+      "Explores the two systems that drive the way we think and make choices.",
+    category: "Psychology",
+    image:
+      "https://jonlieffmd.com/wp-content/uploads/2011/12/thinking-fast-slow-350x428.png",
+  },
+  {
+    id: 9,
+    title: "Make Your Bed",
+    author: "Admiral William H. McRaven",
+    description:
+      "Little things that can change your life... and maybe the world.",
+    category: "Motivation",
+    image:
+      "https://www.madrasshoppe.com/59310-large_default/make-your-bed-william-h-mcraven.jpg",
+  },
+  {
+    id: 10,
+    title: "The Subtle Art of Not Giving a F*ck",
+    author: "Mark Manson",
+    description: "A counterintuitive approach to living a good life.",
+    category: "Personal Growth",
+    image: "https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg",
+  },
+  {
+    id: 11,
+    title: "Start With Why",
+    author: "Simon Sinek",
+    description: "How great leaders inspire everyone to take action.",
+    category: "Leadership",
+    image: "https://m.media-amazon.com/images/I/81N7FmJhbhL.jpg",
+  },
+  {
+    id: 12,
+    title: "Grit",
+    author: "Angela Duckworth",
+    description: "The power of passion and perseverance.",
+    category: "Motivation",
+    image:
+      "https://cawood.com/wp-content/uploads/2018/03/SimonSchuster_Grit.jpg",
+  },
+  {
+    id: 13,
+    title: "Can't Hurt Me",
+    author: "David Goggins",
+    description: "Master your mind and defy the odds.",
+    category: "Motivation",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1200/1*tGbIU9fugXuyfbY1wTgmDw.png",
+  },
+  {
+    id: 14,
+    title: "The Four Agreements",
+    author: "Don Miguel Ruiz",
+    description: "A practical guide to personal freedom.",
+    category: "Personal Growth",
+    image: "https://m.media-amazon.com/images/I/71kxa1-0mfL.jpg",
+  },
+  {
+    id: 15,
+    title: "The Alchemist",
+    author: "Paulo Coelho",
+    description: "A journey of self-discovery and following your dreams.",
+    category: "Fiction",
+    image: "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg",
+  },
+  {
+    id: 16,
+    title: "The Lean Startup",
+    author: "Eric Ries",
+    description:
+      "How today's entrepreneurs use continuous innovation to create radically successful businesses.",
+    category: "Business",
+    image: "https://m.media-amazon.com/images/I/81-QB7nDh4L.jpg",
+  },
+  {
+    id: 17,
+    title: "Man's Search for Meaning",
+    author: "Viktor E. Frankl",
+    description: "A classic exploration of finding purpose through adversity.",
+    category: "Philosophy",
+    image:
+      "https://wizelit.com/content/images/size/w750/2023/05/Man-s-Search-for-Meaning.jpg",
+  },
+  {
+    id: 18,
+    title: "Educated",
+    author: "Tara Westover",
+    description: "A memoir about the transformative power of education.",
+    category: "Memoir",
+    image: "https://m.media-amazon.com/images/I/81WojUxbbFL.jpg",
+  },
+  {
+    id: 19,
+    title: "Sapiens",
+    author: "Yuval Noah Harari",
+    description: "A brief history of humankind.",
+    category: "History",
+    image: "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg",
+  },
+  {
+    id: 20,
+    title: "Thinking in Bets",
+    author: "Annie Duke",
+    description: "Making smarter decisions when you don't have all the facts.",
+    category: "Decision Making",
+    image:
+      "https://fifthperson.com/wp-content/uploads/2022/09/thinking-in-bets.png",
   },
 ];
 
