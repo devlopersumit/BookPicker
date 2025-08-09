@@ -60,7 +60,7 @@ We chose **FindYourBook** instead of **FindMyBook** to keep it user-centric. It'
 
 - 🐦 Twitter: [@yourhandle](https://twitter.com/_sumitjha_)
 - 📧 Email: sumitsj2002@gmail.com
-- 🌐 Website: https://bookpicker.vercel.app
+- 🌐 Website: https://bookforyou.vercel.app
 
 ---
 

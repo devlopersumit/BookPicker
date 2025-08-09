@@ -16,7 +16,7 @@ function Navbar() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                color="blue"
+                color="#3b82f6"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"

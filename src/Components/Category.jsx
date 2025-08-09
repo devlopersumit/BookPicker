@@ -1,0 +1,11 @@
+function Category() {
+    return (
+        <>
+        <section>
+
+        </section>
+        </>
+    )
+}
+
+export default Category
