@@ -31,8 +31,8 @@ function Footer() {
               struggles.
             </p>
             <p className="text-xs text-gray-600">
-              © 2024 FindYourBook. Free forever, no ads, no tracking - just
-              books.
+              Made for lifelong learners. Discover, grow, and inspire—one book
+              at a time.
             </p>
           </div>
 
