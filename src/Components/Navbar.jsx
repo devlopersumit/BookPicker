@@ -116,27 +116,27 @@ function Navbar() {
           {menuOpen && (
             <div className="md:hidden absolute left-0 right-0 bg-white shadow-lg border-b w-full z-40">
               <nav className="flex flex-col px-4 py-4 space-y-4">
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="text-gray-700 text-lg font-medium hover:text-blue-600 transition-colors py-2"
                   onClick={() => setMenuOpen(false)}
                 >
                   Home
-                </a>
-                <a
-                  href="/categories"
+                </Link>
+                <Link
+                  to="/categories"
                   className="text-gray-700 text-lg font-medium hover:text-blue-600 transition-colors py-2"
                   onClick={() => setMenuOpen(false)}
                 >
                   Categories
-                </a>
-                <a
-                  href="/search"
+                </Link>
+                <Link
+                  to="/search"
                   className="text-gray-700 text-lg font-medium hover:text-blue-600 transition-colors py-2"
                   onClick={() => setMenuOpen(false)}
                 >
                   Search
-                </a>
+                </Link>
               </nav>
             </div>
           )}
