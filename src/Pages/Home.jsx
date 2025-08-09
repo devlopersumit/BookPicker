@@ -3,6 +3,7 @@ import Hero from "../Components/Hero";
 import WhyBookForYou from "../Components/WhyBookForYou";
 import Category from "../Components/Category";
 import NotSure from "../Components/NotSure";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <WhyBookForYou />
         <Category />
         <NotSure />
+        <Footer />
       </div>
     </>
   );
