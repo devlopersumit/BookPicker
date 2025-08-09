@@ -1,7 +1,9 @@
+import { Link } from "react-router";
+
 function Categories() {
   return (
     <>
-      <div class="container mx-auto px-4 py-8">
+      <div class="container mx-auto px-4 pt-8">
         <div class="text-center mb-12">
           <h1 class="text-4xl font-bold text-gray-900 mb-4">
             Browse Categories
@@ -241,20 +243,19 @@ function Categories() {
             </div>
           </a>
         </div>
-        <div class="text-center mt-16 bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
-          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+        <div className="text-center mt-16 bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Can't find what you're looking for?
           </h2>
-          <p class="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-6">
             Use our search feature to find books by title, author, or topic.
           </p>
-          <a
-            href="/search"
-            data-slot="button"
-            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 rounded-md px-6 has-[&gt;svg]:px-4"
+          <Link
+            to="/search"
+            className="inline-flex items-center justify-center gap-2 text-base font-semibold rounded-md px-6 py-3 bg-blue-600 text-white shadow transition-all duration-300 hover:bg-blue-700 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
             Search All Books
-          </a>
+          </Link>
         </div>
       </div>
     </>
