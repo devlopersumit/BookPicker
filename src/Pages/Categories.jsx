@@ -14,7 +14,7 @@ function Categories() {
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <a href="/category/personal-growth" class="group">
+          <Link to="/category/personal-growth" class="group">
             <div class=" rounded-xl p-8 border-2 bg-green-100 text-green-700 border-green-200 hover:shadow-xl transition-all duration-300 h-full">
               <div class="flex items-center space-x-4 mb-4">
                 <div class="p-3 rounded-full  text-green-700 bg-green-200 group-hover:scale-110 transition-transform">
@@ -45,15 +45,15 @@ function Categories() {
                 Books to help you develop personally and reach your full
                 potential
               </p>
-              <button
-                data-slot="button"
+              <Link
+                to="/category/personal-growth"
                 class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full group-hover:bg-gray-50"
               >
                 Explore Personal Growth
-              </button>
+              </Link>
             </div>
-          </a>
-          <a href="/category/productivity" class="group">
+          </Link>
+          <Link to="/category/productivity" class="group">
             <div class=" rounded-xl p-8 border-2 bg-blue-100 text-blue-700 border-blue-200 hover:shadow-xl transition-all duration-300 h-full">
               <div class="flex items-center space-x-4 mb-4">
                 <div class="p-3 rounded-full text-blue-700 bg-blue-200 group-hover:scale-110 transition-transform">
@@ -81,15 +81,15 @@ function Categories() {
               <p class="text-gray-600 mb-6">
                 Master your time, focus, and efficiency with proven systems
               </p>
-              <button
-                data-slot="button"
+              <Link
+                to="/category/productivity"
                 class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full group-hover:bg-gray-50"
               >
                 Explore Productivity
-              </button>
+              </Link>
             </div>
-          </a>
-          <a href="/category/finance" class="group">
+          </Link>
+          <Link to="/category/finance" class="group">
             <div class=" rounded-xl p-8 border-2 bg-yellow-100 text-yellow-700 border-yellow-200 hover:shadow-xl transition-all duration-300 h-full">
               <div class="flex items-center space-x-4 mb-4">
                 <div class="p-3 rounded-full text-yellow-700 bg-yellow-200 group-hover:scale-110 transition-transform">
@@ -118,15 +118,15 @@ function Categories() {
                 Build wealth, understand money, and make smart financial
                 decisions
               </p>
-              <button
-                data-slot="button"
+              <Link
+                to="/category/finance"
                 class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full group-hover:bg-gray-50"
               >
                 Explore Finance
-              </button>
+              </Link>
             </div>
-          </a>
-          <a href="/category/psychology" class="group">
+          </Link>
+          <Link to="/category/psychology" class="group">
             <div class=" rounded-xl p-8 border-2 bg-purple-100 text-purple-700 border-purple-200 hover:shadow-xl transition-all duration-300 h-full">
               <div class="flex items-center space-x-4 mb-4">
                 <div class="p-3 rounded-full text-purple-700 bg-purple-200 group-hover:scale-110 transition-transform">
@@ -161,15 +161,15 @@ function Categories() {
               <p class="text-gray-600 mb-6">
                 Understand the mind, behavior, and human psychology
               </p>
-              <button
-                data-slot="button"
+              <Link
+                to="/category/psychology"
                 class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full group-hover:bg-gray-50"
               >
                 Explore Psychology
-              </button>
+              </Link>
             </div>
-          </a>
-          <a href="/category/self-help" class="group">
+          </Link>
+          <Link to="/category/self-help" class="group">
             <div class=" rounded-xl p-8 border-2 bg-pink-100 text-pink-700 border-pink-200 hover:shadow-xl transition-all duration-300 h-full">
               <div class="flex items-center space-x-4 mb-4">
                 <div class="p-3 rounded-full text-pink-700 bg-pink-200 group-hover:scale-110 transition-transform">
@@ -196,15 +196,15 @@ function Categories() {
               <p class="text-gray-600 mb-6">
                 Practical advice for improving your life and wellbeing
               </p>
-              <button
-                data-slot="button"
+              <Link
+                to="/category/self-help"
                 class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full group-hover:bg-gray-50"
               >
                 Explore Self-Help
-              </button>
+              </Link>
             </div>
-          </a>
-          <a href="/category/leadership" class="group">
+          </Link>
+          <Link to="/category/leadership" class="group">
             <div class=" rounded-xl p-8 border-2 bg-indigo-100 text-indigo-700 border-indigo-200 hover:shadow-xl transition-all duration-300 h-full">
               <div class="flex items-center space-x-4 mb-4">
                 <div class="p-3 rounded-full text-indigo-700 bg-indigo-200 group-hover:scale-110 transition-transform">
@@ -234,14 +234,14 @@ function Categories() {
               <p class="text-gray-600 mb-6">
                 Develop leadership skills and learn to inspire others
               </p>
-              <button
-                data-slot="button"
+              <Link
+                to="/category/leadership"
                 class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full group-hover:bg-gray-50"
               >
                 Explore Leadership
-              </button>
+              </Link>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="text-center mt-16 bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
