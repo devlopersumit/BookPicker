@@ -34,18 +34,33 @@ function Navbar() {
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex space-x-6">
-              <NavLink to="/" className="text-blue-600 font-medium">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-blue-600 font-semibold border-blue-600 pb-1"
+                    : "text-gray-600 hover:text-blue-600 transition-colors"
+                }
+              >
                 Home
               </NavLink>
               <NavLink
                 to="/categories"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-blue-600 font-semibold border-blue-600 pb-1"
+                    : "text-gray-600 hover:text-blue-600 transition-colors"
+                }
               >
                 Categories
               </NavLink>
               <NavLink
                 to="/search"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-blue-600 font-semibold border-blue-600 pb-1"
+                    : "text-gray-600 hover:text-blue-600 transition-colors"
+                }
               >
                 Search
               </NavLink>
