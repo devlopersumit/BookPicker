@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 function NotSure() {
   return (
     <>
@@ -177,13 +179,13 @@ function NotSure() {
             <p class="text-gray-600 mb-6">
               Still not sure? Browse all categories to find what speaks to you.
             </p>
-            <a
-              href="/categories"
+            <Link
+              to="/categories"
               data-slot="button"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold transition-all duration-300 bg-gray-900 text-white shadow hover:bg-gray-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 h-10 rounded-md px-6"
             >
               View All Categories
-            </a>
+            </Link>
           </div>
         </div>
       </section>

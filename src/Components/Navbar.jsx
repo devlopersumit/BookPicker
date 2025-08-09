@@ -64,6 +64,16 @@ function Navbar() {
               >
                 Search
               </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-blue-600 font-semibold border-blue-600 pb-1"
+                    : "text-gray-600 hover:text-blue-600 transition-colors"
+                }
+              >
+                About
+              </NavLink>
             </nav>
 
             {/* Mobile Nav Button */}
@@ -136,6 +146,13 @@ function Navbar() {
                   onClick={() => setMenuOpen(false)}
                 >
                   Search
+                </Link>
+                <Link
+                  to="/about"
+                  className="text-gray-700 text-lg font-medium hover:text-blue-600 transition-colors py-2"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  About
                 </Link>
               </nav>
             </div>
