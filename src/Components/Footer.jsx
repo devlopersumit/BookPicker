@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <footer class="bg-gray-900 text-white py-12 px-4 flex items-center justify-between md:flex-col">
+      <footer class="bg-gray-900 text-white py-12 px-4 flex items-center justify-between md:flex-col gap-3 md:items-center">
         <div class="container mx-auto text-center ">
           <div class="flex items-center justify-center space-x-2 mb-4">
             <svg
