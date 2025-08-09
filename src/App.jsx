@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
+import MainLayout from "./Components/MainLayout";
 import Home from "./Pages/Home";
 import Categories from "./Pages/Categories";
 import Search from "./Pages/Search";
@@ -6,15 +7,12 @@ import Search from "./Pages/Search";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/categories",
-    element: <Categories />,
-  },
-  {
-    path: "/search",
-    element: <Search />,
+    element: <MainLayout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/categories", element: <Categories /> },
+      { path: "/search", element: <Search /> },
+    ],
   },
 ]);
 
