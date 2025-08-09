@@ -36,7 +36,7 @@ function Footer() {
             </p>
           </div>
 
-          <div className="flex gap-4 justify-center md:justify-end mt-6 mr-20 md:mt-0">
+          <div className="flex gap-4 justify-center md:justify-end mt-6 mr-20 md:mt-0 md:mr-0">
             <a
               href="https://github.com/devlopersumit/BookPicker"
               target="_blank"

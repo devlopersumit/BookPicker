@@ -1,12 +1,25 @@
-import Home from "./Pages/Home"
+import { createBrowserRouter, RouterProvider } from "react-router";
+import Home from "./Pages/Home";
+import Categories from "./Pages/Categories";
+import Search from "./Pages/Search";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/categories",
+    element: <Categories />,
+  },
+  {
+    path: "/search",
+    element: <Search />,
+  },
+]);
 
 function App() {
-
-  return (
-    <>
-      <Home />
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
