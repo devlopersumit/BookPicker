@@ -1,8 +1,8 @@
 function Footer() {
   return (
     <>
-      <footer class="bg-gray-900 text-white py-12 px-4 flex items-center justify-between">
-        <div class="container mx-auto text-center">
+      <footer class="bg-gray-900 text-white py-12 px-4 flex items-center justify-between md:flex-col">
+        <div class="container mx-auto text-center ">
           <div class="flex items-center justify-center space-x-2 mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,11 +32,11 @@ function Footer() {
           <p class="text-xs text-gray-600">
             © 2024 FindYourBook. Free forever, no ads, no tracking - just books.
           </p>
-        </div>
+        
 
         <div className="flex gap-4 mx-12 mb-4">
           <div>
-           <a href="https://github.com/devlopersumit/"> <svg
+           <a href="https://github.com/devlopersumit/" target="_blank"> <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -55,7 +55,7 @@ function Footer() {
 
           <div>
             <a href=" https://www.linkedin.com/in/sumit-jha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-"><svg
+" target="_blank"><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -74,7 +74,7 @@ function Footer() {
           </div>
 
           <div>
-            <a href=" https://x.com/_sumitjha_?t=4nSWLPjfWOEhS06PoX9-Lg&s=09"><svg
+            <a href=" https://x.com/_sumitjha_?t=4nSWLPjfWOEhS06PoX9-Lg&s=09" target="_blank"><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -89,6 +89,7 @@ function Footer() {
               <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
             </svg></a>
           </div>
+        </div>
         </div>
       </footer>
     </>

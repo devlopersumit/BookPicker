@@ -9,7 +9,7 @@ function WhyBookForYou() {
             </h2>
             <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-left">
               <div class="prose prose-lg max-w-none">
-                <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                <p class="text-gray-700 mb-6 text-lg leading-relaxed text-center">
                   I was tired of spending hours scrolling through endless book
                   recommendations, reading conflicting reviews, and still
                   feeling confused about which book would actually help me grow.
@@ -51,7 +51,7 @@ function WhyBookForYou() {
                     </li>
                   </ul>
                 </div>
-                <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                <p class="text-gray-700 mb-6 text-lg leading-relaxed text-center">
                   <strong>BookForYou</strong> is my solution - built not for
                   profit, but out of genuine frustration with the current book
                   discovery experience. It's a simple, no-signup platform where
