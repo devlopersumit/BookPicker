@@ -33,6 +33,83 @@ const Hero = () => {
               placeholder="Search books, authors, or topics..."
             />
           </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-8">
+            <div className="flex flex-col items-center">
+              <span className="bg-blue-100 p-3 rounded-full mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-book-open text-blue-600"
+                >
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </span>
+              <span className="text-base font-semibold text-gray-700">
+                Curated Book Picks
+              </span>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="bg-green-100 p-3 rounded-full mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-sparkles text-green-600"
+                >
+                  <path d="M12 3v2"></path>
+                  <path d="M12 19v2"></path>
+                  <path d="M3 12h2"></path>
+                  <path d="M19 12h2"></path>
+                  <path d="M5.6 5.6l1.4 1.4"></path>
+                  <path d="M17 17l1.4 1.4"></path>
+                  <path d="M17 7l1.4-1.4"></path>
+                  <path d="M7 17l-1.4 1.4"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </span>
+              <span className="text-base font-semibold text-gray-700">
+                Grow Every Day
+              </span>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="bg-yellow-100 p-3 rounded-full mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-smile text-yellow-600"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 15s1.5 2 4 2 4-2 4-2"></path>
+                  <path d="M9 9h.01"></path>
+                  <path d="M15 9h.01"></path>
+                </svg>
+              </span>
+              <span className="text-base font-semibold text-gray-700">
+                Enjoy the Process
+              </span>
+            </div>
+          </div>
         </div>
       </section>
     </>
