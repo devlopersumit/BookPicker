@@ -44,7 +44,7 @@ function About() {
           </li>
         </ul>
       </div>
-      <p className="text-gray-600 mt-8 text-xs sm:text-sm text-left sm:text-center">
+      <p className="text-gray-600 mt-8 text-xs sm:text-sm text-left sm:text-center md:text-center">
         Made with ❤️ by Sumit Jha.
         <br className="sm:hidden" /> Connect on{" "}
         <a
