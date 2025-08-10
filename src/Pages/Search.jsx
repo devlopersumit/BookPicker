@@ -7,7 +7,8 @@ function Search() {
   const [googleBooks, setGoogleBooks] = useState([]);
   const [openLibraryBooks, setOpenLibraryBooks] = useState([]);
 
-  const GOOGLE_BOOKS_API_KEY = "AIzaSyC6tpNvCrQvcMLhsd23M2i7F_kpVkk_sr4";
+  // Get API key from .env
+  const GOOGLE_BOOKS_API_KEY = import.meta.env.VITE_GOOGLE_BOOKS_API_KEY;
 
   const filteredBooks = books.filter(
     (book) =>
@@ -41,64 +42,32 @@ function Search() {
     }
   };
 
-  const getGoogleThumbnail = (info) => {
-    if (!info.imageLinks) return "";
-    const url = info.imageLinks.thumbnail || info.imageLinks.smallThumbnail;
-    return url?.replace("http://", "https://");
-  };
-
-  const getOpenLibraryCover = (coverId) => {
-    return coverId
-      ? `https://covers.openlibrary.org/b/id/${coverId}-L.jpg`
-      : "";
-  };
-
-  const Card = ({ img, title, author }) => (
-    <div className="bg-white border border-gray-200 p-4 rounded-lg shadow-sm hover:shadow-lg transition-all duration-200">
-      {img ? (
-        <img
-          src={img}
-          alt={title}
-          className="w-full h-60 object-cover rounded-md mb-3"
-        />
-      ) : (
-        <div className="w-full h-60 bg-gray-200 rounded-md flex items-center justify-center text-gray-500 text-sm">
-          No Cover
-        </div>
-      )}
-      <h3 className="text-lg font-semibold line-clamp-2">{title}</h3>
-      <p className="text-gray-600 text-sm line-clamp-1">{author}</p>
-    </div>
-  );
-
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Page Title */}
+      {/* Heading */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Search Books</h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Search through our curated collection and explore results from
-          multiple sources.
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          Find your next favorite book from multiple sources.
         </p>
       </div>
 
-      {/* Search Input */}
-      <form onSubmit={handleSearch} className="mb-8">
+      {/* Search Bar */}
+      <form onSubmit={handleSearch} className="mb-6">
         <input
-          className="pl-4 py-3 text-lg border-2 border-gray-200 focus:border-blue-500 rounded-lg w-full transition-all"
+          type="text"
           placeholder="Search books, authors, or topics..."
+          className="border border-gray-300 rounded-lg p-3 w-full"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
       </form>
 
-      {/* Local Results */}
+      {/* Local Books */}
       {filteredBooks.length > 0 && (
         <>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Local Results
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+          <h2 className="text-2xl font-bold mb-4">Local Books</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {filteredBooks.map((book) => (
               <BookCard key={book.id} {...book} />
             ))}
@@ -109,21 +78,29 @@ function Search() {
       {/* Google Books Results */}
       {googleBooks.length > 0 && (
         <>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Google Books Results
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-            {googleBooks.map((book) => {
-              const info = book.volumeInfo || {};
-              return (
-                <Card
-                  key={book.id}
-                  img={getGoogleThumbnail(info)}
-                  title={info.title}
-                  author={info.authors?.join(", ") || "Unknown Author"}
-                />
-              );
-            })}
+          <h2 className="text-2xl font-bold mb-4">Google Books Results</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            {googleBooks.map((book) => (
+              <div
+                key={book.id}
+                className="bg-white shadow rounded-lg p-4 flex flex-col items-center"
+              >
+                {book.volumeInfo?.imageLinks?.thumbnail ? (
+                  <img
+                    src={book.volumeInfo.imageLinks.thumbnail}
+                    alt={book.volumeInfo.title}
+                    className="w-32 h-48 object-cover mb-3"
+                  />
+                ) : (
+                  <div className="w-32 h-48 bg-gray-200 flex items-center justify-center mb-3">
+                    No Image
+                  </div>
+                )}
+                <h3 className="text-lg font-semibold text-center">
+                  {book.volumeInfo?.title}
+                </h3>
+              </div>
+            ))}
           </div>
         </>
       )}
@@ -131,17 +108,28 @@ function Search() {
       {/* Open Library Results */}
       {openLibraryBooks.length > 0 && (
         <>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Open Library Results
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h2 className="text-2xl font-bold mb-4">Open Library Results</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {openLibraryBooks.map((book) => (
-              <Card
+              <div
                 key={book.key}
-                img={getOpenLibraryCover(book.cover_i)}
-                title={book.title}
-                author={book.author_name?.join(", ") || "Unknown Author"}
-              />
+                className="bg-white shadow rounded-lg p-4 flex flex-col items-center"
+              >
+                {book.cover_i ? (
+                  <img
+                    src={`https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`}
+                    alt={book.title}
+                    className="w-32 h-48 object-cover mb-3"
+                  />
+                ) : (
+                  <div className="w-32 h-48 bg-gray-200 flex items-center justify-center mb-3">
+                    No Image
+                  </div>
+                )}
+                <h3 className="text-lg font-semibold text-center">
+                  {book.title}
+                </h3>
+              </div>
             ))}
           </div>
         </>
